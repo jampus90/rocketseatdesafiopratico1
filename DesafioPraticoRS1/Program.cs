@@ -7,6 +7,7 @@
             var apresentacaoService = new Apresentacao();
             var operacoesService = new OperacoesMatematicas();
             var stringService = new ManipulaString();
+            var placaService = new PlacaVeiculo();
 
             Console.WriteLine("Escolha o exercício que deseja rodar:");
             Console.WriteLine("1. Mensagem de boas vindas ao digitar o nome");
@@ -47,6 +48,11 @@
                         int quantidadeCaracteres = stringService.ContaCaracteres(palavra);
                         Console.WriteLine(quantidadeCaracteres);
                     }
+                    break;
+
+                case 5:
+                    var placa = placaService.DigitaPlaca();
+                    Console.WriteLine(placa);
                     break;
 
             }
