@@ -8,6 +8,7 @@
             var operacoesService = new OperacoesMatematicas();
             var stringService = new ManipulaString();
             var placaService = new PlacaVeiculo();
+            var dataService = new FormatarData();
 
             Console.WriteLine("Escolha o exercício que deseja rodar:");
             Console.WriteLine("1. Mensagem de boas vindas ao digitar o nome");
@@ -53,6 +54,9 @@
                 case 5:
                     var placa = placaService.DigitaPlaca();
                     Console.WriteLine(placa);
+                    break;
+                case 6:
+                    dataService.SolicitaFormatoData();
                     break;
 
             }
